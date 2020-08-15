@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route,Switch, Redirect, Link } from "react-router-dom";
+// import { Sidenav } from './Sidenav';
 
 class Dashboard extends React.Component {
   constructor(props) {
@@ -12,6 +13,7 @@ class Dashboard extends React.Component {
   render() {
     return (
       <div className="vw-100 vh-100 primary-color d-flex align-items-center justify-content-center">
+      {/* <Sidenav /> */}
         <div className="jumbotron jumbotron-fluid bg-transparent">
           <div className="container secondary-color">
             <div>Welcome to Dashboard</div>

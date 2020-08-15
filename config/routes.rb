@@ -13,6 +13,9 @@ end
 Rails.application.routes.draw do
   constraints(SubdomainPresent) do
     root "dashboard#index", as: :subdomain_root
+    devise_for :users, controllers: {
+      sessions: 'users/sessions'
+    }
   end
 
   constraints(SubdomainBlank) do
